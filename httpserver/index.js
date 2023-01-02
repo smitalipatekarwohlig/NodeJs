@@ -17,6 +17,7 @@ const server = http.createServer((req,res)=>{
     // console.log(req.url);
     if(req.url == "/"){
         res.end('Hello from the home side');
+        //res.end() end the response without any data
     }else if(req.url == "/about"){
         res.end('Hello from the AboutUs side');
     }else if(req.url == "/contact"){

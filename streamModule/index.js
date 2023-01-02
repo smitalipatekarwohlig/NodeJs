@@ -35,7 +35,7 @@ server.on("request",(req,res)=>{
 //3rd way
 
 const rstream = fs.createReadStream("input.txt");
-  rstream.pipe(res);
+  rstream.pipe(res);//it is used to take readable data and connect it to writable data
 });
 
 server.listen(8000, "127.0.0.1");
